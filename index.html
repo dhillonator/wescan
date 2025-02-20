@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wescan Landscaping | Premium Artificial Turf Installation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="/src/main.js"></script>
+    <style>
+        .fade-in-section {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        
+        .fade-in-section.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .shadow-text {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .text-shadow {
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation placeholder -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen fade-in-section">
+        <!-- Background image with overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="/images/hero-background.jpg" alt="Artificial turf installation" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <!-- Content -->
+        <div class="relative z-10 pt-24 min-h-screen flex items-center">
+            <div class="max-w-6xl mx-auto px-4 pt-12 text-center">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white shadow-text" style="font-family: 'Playfair Display', serif;">
+                    PREMIER ARTIFICIAL
+                    <br>
+                    TURF INSTALLATION
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-white text-shadow">
+                    Transform your outdoor space with premium synthetic grass
+                </p>
+                <div class="text-center">
+                    <a href="#contact" class="bg-green-700 text-white px-8 py-4 inline-block text-lg hover:bg-green-800 transition shadow-lg">
+                        SCHEDULE A FREE CONSULTATION
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10">
+            <div class="animate-bounce">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="py-16 md:py-24 bg-white fade-in-section">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl text-center mb-12" style="font-family: 'Playfair Display', serif;">
+                Our Professional Services
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <!-- Artificial Turf -->
+                <a href="services.html#artificial-turf" class="group">
+                    <div class="relative aspect-[4/3] mb-4 overflow-hidden rounded-lg shadow-md">
+                        <div class="bg-gray-200 w-full h-full">
+                            <!-- Replace with actual image -->
+                            <img src="/images/placeholder-turf.jpg" alt="Artificial Turf Installation" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                    </div>
+                    <div class="border-b-2 border-green-700 inline-block">
+                        <h3 class="text-lg md:text-xl mb-2 group-hover:text-green-700 transition">ARTIFICIAL TURF</h3>
+                    </div>
+                </a>
+
+                <!-- Property Services -->
+                <a href="services.html#property-services" class="group">
+                    <div class="relative aspect-[4/3] mb-4 overflow-hidden rounded-lg shadow-md">
+                        <div class="bg-gray-200 w-full h-full">
+                            <!-- Replace with actual image -->
+                            <img src="/images/placeholder-property.jpg" alt="Property Services" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                    </div>
+                    <div class="border-b-2 border-green-700 inline-block">
+                        <h3 class="text-lg md:text-xl mb-2 group-hover:text-green-700 transition">PROPERTY SERVICES</h3>
+                    </div>
+                </a>
+
+                <!-- Snow Removal -->
+                <a href="services.html#snow-removal" class="group sm:col-span-2 md:col-span-1">
+                    <div class="relative aspect-[4/3] mb-4 overflow-hidden rounded-lg shadow-md">
+                        <div class="bg-gray-200 w-full h-full">
+                            <!-- Replace with actual image -->
+                            <img src="/images/placeholder-snow.jpg" alt="Snow Removal & Salting" class="w-full h-full object-cover group-hover:scale-105 transition duration-300">
+                        </div>
+                    </div>
+                    <div class="border-b-2 border-green-700 inline-block">
+                        <h3 class="text-lg md:text-xl mb-2 group-hover:text-green-700 transition">SNOW REMOVAL</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Artificial Turf -->
+    <section id="why-turf" class="py-24 bg-green-50/70 fade-in-section">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl mb-8 text-center" style="font-family: 'Playfair Display', serif;">
+                Why Choose Artificial Turf
+            </h2>
+            <p class="text-lg text-center mb-16 max-w-3xl mx-auto">
+                Artificial turf offers numerous advantages over natural grass. From drought resistance to minimal maintenance, 
+                our synthetic turf solutions provide lasting benefits for both residential and commercial properties.
+            </p>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-12">
+                    <div class="flex items-start gap-6">
+                        <div class="text-green-600 w-16 h-16 flex-shrink-0">
+                            <div class="w-16 h-16 border-2 border-green-600 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🛡️</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Reliable and Safe</h3>
+                            <p>Our premium synthetic grass is completely safe for children and pets, featuring non-toxic materials and allergen-free construction.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <div class="text-green-600 w-16 h-16 flex-shrink-0">
+                            <div class="w-16 h-16 border-2 border-green-600 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🐾</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Pet Friendly</h3>
+                            <p>Specially designed to be durable and comfortable for pets, our turf provides the perfect surface for your furry friends to play and relax.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-y-12">
+                    <div class="flex items-start gap-6">
+                        <div class="text-green-600 w-16 h-16 flex-shrink-0">
+                            <div class="w-16 h-16 border-2 border-green-600 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">🌿</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Low Maintenance</h3>
+                            <p>Eliminate the need for watering, mowing, and regular maintenance. Our artificial turf stays perfect year-round with minimal effort.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-6">
+                        <div class="text-green-600 w-16 h-16 flex-shrink-0">
+                            <div class="w-16 h-16 border-2 border-green-600 rounded-full flex items-center justify-center">
+                                <span class="text-2xl">⚡</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold mb-2">Expert Installation</h3>
+                            <p>Our experienced team guarantees professional installation within 30 days, ensuring perfect results every time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-24 bg-white fade-in-section">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-4xl mb-16 text-center" style="font-family: 'Playfair Display', serif;">
+                How It Works
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-12">
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center">1</div>
+                        <h3 class="text-xl font-bold mb-2">Initial Consultation</h3>
+                        <p>Connect with our friendly team to discuss your needs and vision for your outdoor space.</p>
+                    </div>
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center">2</div>
+                        <h3 class="text-xl font-bold mb-2">Free Design Consultation</h3>
+                        <p>Our professional team visits your property to provide personalized recommendations.</p>
+                    </div>
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center">3</div>
+                        <h3 class="text-xl font-bold mb-2">Site Assessment</h3>
+                        <p>We take detailed measurements and answer all your questions about the installation process.</p>
+                    </div>
+                </div>
+                <div class="space-y-12">
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center">4</div>
+                        <h3 class="text-xl font-bold mb-2">Product Selection</h3>
+                        <p>Choose from our range of premium turf options, with samples and pricing tailored to your needs.</p>
+                    </div>
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center">5</div>
+                        <h3 class="text-xl font-bold mb-2">Installation</h3>
+                        <p>Our expert team completes the installation with precision and attention to detail.</p>
+                    </div>
+                    <div class="relative pl-12">
+                        <div class="absolute left-0 top-0 w-8 h-8 bg-green-600 text-white rounded-full flex items-center justify-center">6</div>
+                        <h3 class="text-xl font-bold mb-2">Final Walkthrough</h3>
+                        <p>We ensure your complete satisfaction with a detailed inspection of the completed installation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-green-50/70 fade-in-section">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-4xl mb-12 text-center text-gray-800" style="font-family: 'Playfair Display', serif;">Get Started</h2>
+            <form class="space-y-6">
+                <div>
+                    <label class="block mb-2 text-lg text-gray-700">Name</label>
+                    <input type="text" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                </div>
+                <div>
+                    <label class="block mb-2 text-lg text-gray-700">Email</label>
+                    <input type="email" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                </div>
+                <div>
+                    <label class="block mb-2 text-lg text-gray-700">Phone</label>
+                    <input type="tel" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-green-500 focus:border-green-500" required>
+                </div>
+                <div>
+                    <label class="block mb-2 text-lg text-gray-700">Message</label>
+                    <textarea class="w-full p-3 border rounded-lg h-32 focus:ring-2 focus:ring-green-500 focus:border-green-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-green-700 text-white py-4 text-lg rounded-lg hover:bg-green-800 transition shadow-lg">
+                    Request Consultation
+                </button>
+            </form>
+        </div>
+    </section>
+
+        <!-- Footer placeholder -->
+    <div id="footer-placeholder"></div>
+</body>
+</html>

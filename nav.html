@@ -1,0 +1,47 @@
+<!-- Navigation -->
+<nav class="fixed w-full bg-white z-50 px-4 py-4 shadow-sm">
+    <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <div class="flex items-center space-x-2">
+            <a href="index.html" class="text-3xl font-semibold text-green-800">WESCAN</a>
+        </div>
+        <button id="mobile-menu-button" class="md:hidden flex flex-col space-y-1.5">
+            <span class="block w-8 h-0.5 bg-black"></span>
+            <span class="block w-8 h-0.5 bg-black"></span>
+            <span class="block w-8 h-0.5 bg-black"></span>
+        </button>
+        <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-gray-800 hover:text-green-700">Home</a>
+            <a href="about-us.html" class="text-gray-800 hover:text-green-700">FAQ</a>
+            <a href="Services.html" class="text-gray-800 hover:text-green-700">Services</a>
+            <a href="Pets.html" class="text-gray-800 hover:text-green-700">Pets</a>
+            <a href="Gallery.html" class="text-gray-800 hover:text-green-700">Gallery</a>
+            <a href="Contact.html" class="text-gray-800 hover:text-green-700">Contact</a>
+        </div>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+        <a href="index.html" class="block py-2 text-gray-800 hover:text-green-700">Home</a>
+        <a href="about-us.html" class="block py-2 text-gray-800 hover:text-green-700">About Us</a>
+        <a href="Services.html" class="block py-2 text-gray-800 hover:text-green-700">Services</a>
+        <a href="Pets.html" class="block py-2 text-gray-800 hover:text-green-700">Pets</a>
+        <a href="Gallery.html" class="block py-2 text-gray-800 hover:text-green-700">Gallery</a>
+        <a href="Contact.html" class="block py-2 text-gray-800 hover:text-green-700">Contact</a>
+    </div>
+</nav>
+
+<script>
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenuButton.contains(e.target) && !mobileMenu.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+    }
+</script>
